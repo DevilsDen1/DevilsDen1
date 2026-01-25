@@ -47,7 +47,7 @@
 
 ### 🐍 Katkı Grafiği (Snake)
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DevilsDen1/DevilsDen1/output/github-contribution-grid-snake.svg" />
+ <img src="https://raw.githubusercontent.com/DevilsDen1/DevilsDen1/output/github-contribution-grid-snake-dark.svg" />
 </p>
 
 ---
