@@ -60,7 +60,7 @@
 <a href="https://www.youtube.com/c/devilsdenn1" target="_blank">
   <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" width="40"/>
 </a>
-<a href="https://discord.gg/1320312392311242813" target="_blank">
+<a href="https://discord.gg/deus" target="_blank">
   <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" width="40"/>
 </a>
 </p>
