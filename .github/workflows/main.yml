@@ -2,39 +2,30 @@ name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 */6 * * *" # Her 6 saatte bir otomatik çalışır
-  workflow_dispatch: # Manuel olarak Actions sekmesinden başlatmanı sağlar
+    - cron: "0 */6 * * *" # Her 6 saatte bir
+  workflow_dispatch:
 
-# Yazma izni hatasını (403) önlemek için gerekli kısım
 permissions:
   contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      # Repoyu kontrol eder
-      - uses: actions/checkout@v3
 
-      # Yılan animasyonunu oluşturur
-      - uses: Platane/snk@v3
-        id: snake-gif
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate snake animation
+        uses: Platane/snk@v3
         with:
           github_user_name: DevilsDen1
           outputs: |
             dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake.gif?palette=github-dark
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      # Değişiklikleri master branch'ine gönderir
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: master
-          force: true
-
-      # Çıktıları 'output' adlı ayrı bir branch'e yükler (README'de kullanmak için)
-      - uses: crazy-max/ghaction-github-pages@v3
+      - name: Deploy to output branch
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
