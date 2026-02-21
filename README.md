@@ -57,7 +57,7 @@
 <a href="https://instagram.com/ismailcanyalaz" target="_blank">
   <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" width="40"/>
 </a>
-<a href="https://www.youtube.com/c/devilsdenn1" target="_blank">
+<a href="https://www.youtube.com/@devilsdenn1" target="_blank">
   <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" width="40"/>
 </a>
 <a href="https://discord.gg/deus" target="_blank">
